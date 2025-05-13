@@ -1,14 +1,12 @@
 package recursion;
 
 public class CountDownTimer {
-    public static int countDown(int n) {
-        if (n == 1) {
+    public static void countDown(int n) {
+        if (n > 0) {
             System.out.println(n);
-            return n;
+            countDown(n - 1);
         }
 
-        System.out.println(n);
-        return countDown(n - 1);
     }
 
     public static void main(String[] args) {
