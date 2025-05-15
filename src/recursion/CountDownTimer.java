@@ -5,8 +5,7 @@ public class CountDownTimer {
         if (n > 0) {
             System.out.println(n);
             countDown(n - 1);
-        }
-
+        } 
     }
 
     public static void main(String[] args) {
